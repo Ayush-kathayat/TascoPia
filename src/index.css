@@ -64,6 +64,57 @@
   --line-height-md: 1.6; /* Medium line height (usually the default body line height) */
   --line-height-lg: 1.8; /* Large line height */
   --line-height-xl: 2; /* Extra large line height */
+
+
+  /* COLORS */
+
+  --color-background: #0d1117;
+
+  /* TODO: focus and visited color to be different */
+  --color-text-anchor-focus: #40a9ff;
+  --color-text-anchor-visited: #005086;
+  --color-white: #fff;
+  --color-white-90: rgb(255 255 255 / 0.9);
+  --color-white-75: rgb(255 255 255 / 0.75);
+  --color-white-50: rgb(255 255 255 / 0.5);
+  --color-white-10: rgb(255 255 255 / 0.1);
+
+  /* ====== */
+
+  /* FONTS */
+
+  --font-family-body: "Oxanium", cursive;
+  /* --font-family-title: "Poppins", "Helvetica Neue", helvetica, arial,
+     sans-serif;
+   --font-family-display: "Poppins", "Helvetica Neue", helvetica, arial,
+     sans-serif;
+   --font-family-mono: source-code-pro, "Menlo", "Monaco", "Consolas",
+     "Courier New", monospace;
+   --font-family-input: var(--font-family-body);  */
+
+  /* type scale 1.2 (https://type-scale.com/) */
+  --font-size-em: 1.2em;
+  --font-size-mammoth: 2.488rem;
+  --font-size-xhuge: 2.074rem;
+  --font-size-huge: 1.728rem;
+  --font-size-xlarge: 1.44rem;
+  --font-size-large: 1.2rem;
+  --font-size-normal: 1rem;
+  --font-size-tiny: 0.579rem;
+
+  /* line heights */
+  --line-height: 1.5;
+  --line-height-thin: 1.25;
+
+  /* weights */
+  --font-weight-bold: 600;
+  --font-weight-semibold: 500;
+  --font-weight-normal: 400;
+  --font-weight-light: 300;
+  --font-weight-thin: 200;
+
+  /* ====== */
+
 }
 
 ::-webkit-scrollbar {
@@ -130,4 +181,27 @@ a:hover {
 
 .unique{
   color: var(--accent);
+}
+
+/* smooth scroll css */
+
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
 }

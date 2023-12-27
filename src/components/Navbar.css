@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family: var(--font-family-body);
   width: 100%;
   z-index: 100;
 }
@@ -40,13 +39,16 @@
 
 .app-name {
   font-size: var(--font-size-mammoth);
+  color: white;
+  margin-bottom: 5%;
+
 }
 
 .nav-links {
   width: 25%;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 10%;
+  margin-right: 15%;
   align-items: center;
   justify-content: flex-start;
   list-style: none;
@@ -59,7 +61,7 @@
   display: inline-block;
   position: relative;
   color: white;
-  padding: 5%;
+  padding: 8%;
 
 }
 
@@ -98,7 +100,7 @@
   justify-content: center;
   align-items: center;
   width: 15%;
-  /* margin : 1% 13% 1% 24%; */
+  margin-right : 1%;
 }
 
 .nav-btn {
