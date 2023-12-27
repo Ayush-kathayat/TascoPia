@@ -1,0 +1,16 @@
+
+.login{
+  display :flex;
+}
+
+.login-left{
+  height: 100vh;
+  width : 50%;
+  background-color: var(--secondary);
+}
+
+.login-right{
+  height: 100vh;
+  width : 50%;
+  background: url(../assets/auth.svg) no-repeat center center;
+}

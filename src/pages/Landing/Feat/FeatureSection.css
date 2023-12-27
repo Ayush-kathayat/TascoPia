@@ -1,0 +1,159 @@
+.feat-title-wrapper{
+  margin-top : 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.feat-title{
+  margin-top : 20%; 
+  letter-spacing: 2rem;
+  font-size : var(--font-size-mammoth);
+  font-weight: 900;
+  display: inline-block;
+  position: relative;
+}
+
+.feat-title:hover{
+  cursor : pointer;
+}
+
+.feat-title:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:  white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.feat-title:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.feat-wrapper {
+  display: flex;
+  margin-top: 10%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.feat-right {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.middle-feat-line {
+  width: 5px;
+  height: 1200px;
+  background-color: white;
+}
+
+.feat-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.feats {
+  width: 500px;
+  background-color: white;
+  color: black;
+  border-radius : 8px;
+}
+
+.circles {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.feat-right > .circles{
+  margin-top : 15%;
+  margin-bottom : 20%;
+  position: relative;
+  top:55px;
+}
+
+.feat-right > .feats{
+  margin-top : 15%;
+  margin-bottom : 20%;
+}
+
+.feat-left > .circles{
+  margin-top : 15%;
+  margin-bottom : 20%; 
+  position: relative;
+  top: -55px;
+}
+
+.feat-left > .feats{
+  margin-top : 15%;
+  margin-bottom : 20%; 
+  
+}
+
+.content{
+  margin : 5%;
+}
+
+
+@media (max-width : 1100px) {
+
+  .middle-feat-line{
+    display : none;
+  }
+
+  .circles{
+    display : none; 
+  }
+
+  .feat-left{
+    align-items: center;
+  }
+
+  .feat-right{
+    align-items: center;
+  }
+}
+
+@media (min-width : 600px) and (max-width : 1100px){
+
+  .feats{
+
+    width : 450px;
+    height: 240px;
+  }
+}
+
+
+@media (max-width : 850px) {
+
+  .feat-title{
+    font-size: var(--font-size-xhuge);
+    letter-spacing: 1.5rem;
+  }
+  
+}
+
+@media (max-width : 600px) {
+
+  .feats{
+    width : 300px
+  }
+  .feat-title{
+    font-size: var(--font-size-xhuge);
+    letter-spacing: 0.7rem;
+  }
+}

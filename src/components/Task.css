@@ -1,0 +1,81 @@
+.task-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width :30%;
+}
+
+.task-list-title {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.task-list  {
+  padding: 0;
+  list-style: none;
+  margin-left: 30px;
+  width : 60%;
+}
+
+.task  , .subtask{
+  margin-top: 15%;
+  margin-bottom: 15%;
+  font-size: var(--font-xl);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-family: "Ubuntu", sans-serif;
+  word-wrap: break-word; /* Allow content to wrap within the task element */
+ 
+
+}
+
+
+.task-input-wrapper  , .subtask-input-wrapper{
+  display: flex;
+}
+
+#task-input , #subtask-input {
+  background: transparent;
+  border: 1px solid white;
+  height: 2.6rem;
+  width: 250px;
+  outline: none;
+  color: var(--text);
+  font-size: var(--font-md);
+  margin-left: 5%;
+  border: none;
+  border-bottom: 2px solid var(--text);
+  transition: box-shadow 0.3s ease; /* animate the changes */
+  font-family: "Ubuntu", sans-serif;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 2px 0 0 white; /* simulate a thicker bottom border */
+}
+
+.task-enter  , .subtask-enter{
+  background: transparent;
+  color: var(--text);
+  outline: none;
+  border: 0;
+  font-size: var(--font-xxl);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.task-enter:hover , .subtask-enter:hover{
+  opacity: 0.1;
+  scale: 1.2;
+}
+
+/* utitlity classes for task */
+
+.task-clicked {
+
+  transform: translate(10px, 0);
+  font-size : var(--font-xxl);
+  color: var(--accent);
+  text-shadow: -5px 1px 10px rgb(234 234 234 / 50%);
+}

@@ -1,0 +1,156 @@
+.subtask-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.subtask-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
+.taskname {
+  margin-left: 34px;
+}
+
+.task-remaining {
+  margin-left: 300px;
+  font-size: 12px;
+  color: #999;
+  font-size: var(--font-sm);
+}
+
+.subtask-list {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.subtask-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+/* styles related to custom checkbox */
+
+.subtask{
+    font-size : var(--font-xl);
+    transform: scale(1);
+    transition: transform 180ms ease-in-out;
+
+}
+
+.subtask:hover{
+    color : var(--text);
+    transform: scale(1.02);
+}
+
+[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.subtasks label {
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+}
+
+.subtasks {
+    position: relative;
+    margin-bottom: 5%;
+}
+
+
+.subtasks::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0em;
+  height: 2px;
+  background-color: white;
+  opacity: 0.1;
+}
+
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+  height: var(--font-sm);
+  width: var(--font-sm);
+  margin-right: var(--font-sm);
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+}
+
+.subtasks:hover .custom-checkbox,
+[type="checkbox"]:focus + label .custom-checkbox {
+  transform: scale(1.2);
+}
+
+[type="checkbox"]:checked + label .custom-checkbox{
+    background : white;
+    border-color: white;
+    box-shadow: inset 0 0 0 3px black;
+}
+
+[type="checkbox"]:checked + label{
+    opacity: 0.5;
+}
+
+.subtasks label::after{
+    content: "";
+    position: absolute;
+    left : 1.5em;
+    right : 0;
+    top:50%;
+    height : 3px;
+    background-color: white;
+    transform : scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+}
+
+[type="checkbox"]:checked +label::after{
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+/* styles for .custom-checkbox ended here */
+
+
+.subtask-input-wrapper{
+    margin-top: 10%;
+}
+
+
+.Delete-complete,
+.Delete-whole {
+  margin-left: 6%;
+  margin-right: 6%;
+  background: transparent;
+  color: var(--text);
+  outline: none;
+  padding: 8px;
+  border: 1px solid var(--text);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.Delete-complete:hover,
+.Delete-whole:hover {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+/* utility classes */
+
+/* .uncompleted {
+} */
