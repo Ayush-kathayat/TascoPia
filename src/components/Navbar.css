@@ -111,9 +111,31 @@
   border: none;
 }
 
+
+
 .log-btn {
   background-color: var(--color-background);
   color: white;
+  transition: all 2s ease;
+
+}
+
+.log-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-background);
+  transition: all 1s ease;
+}
+
+.sign-btn {
+  background-color: var(--color-white);
+  color: var(--color-background);
+  transition: all 2s ease;
+}
+
+.sign-btn:hover {
+  background-color: var(--color-background);
+  color: var(--color-white);
+  transition: all 1s ease;
 }
 
 .mobile-navbar-btn {
