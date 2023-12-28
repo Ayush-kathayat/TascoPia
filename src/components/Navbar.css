@@ -39,7 +39,7 @@
 
 .app-name {
   font-size: var(--font-size-mammoth);
-  color: white;
+  color: var(--accent);
   margin-bottom: 5%;
 
 }
@@ -49,8 +49,9 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 15%;
-  align-items: center;
-  justify-content: flex-start;
+  /* align-items: center;
+  justify-content: flex-start; */
+  gap: 25%;
   list-style: none;
   padding: 0%;
   font-weight: var(--font-weight-bold);
@@ -58,10 +59,12 @@
 
 
 .links {
-  display: inline-block;
   position: relative;
   color: white;
-  padding: 8%;
+  padding-left: %;
+  padding-right: %;
+
+ 
 
 }
 
@@ -118,26 +121,26 @@
 .log-btn {
   background-color: var(--color-background);
   color: white;
-  transition: all 2s ease;
+  transition: all 0.5s ease;
 
 }
 
 .log-btn:hover {
   background-color: var(--color-white);
   color: var(--color-background);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .sign-btn {
-  background-color: var(--color-white);
+  background-color: var(--accent);
   color: var(--color-background);
-  transition: all 2s ease;
+  transition: all 0.5s ease;
 }
 
 .sign-btn:hover {
   background-color: var(--color-background);
   color: var(--color-white);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .mobile-navbar-btn {
@@ -177,6 +180,7 @@
     transform: translateX(-110%);
     transition: all 0.5s ease;
     margin-left: 2.5%;
+    gap : 0%;
   }
 
   .nav-links > span {
@@ -199,9 +203,6 @@
   .MyLogo {
     display: none;
   }
-  /* .skull-2 > .MyLogo {
-    display: block;
-  } */
 
   .app-name {
     font-size: var(--font-size-huge);

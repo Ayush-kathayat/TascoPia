@@ -16,6 +16,8 @@
 
 .hero_title {
   margin: 5%;
+  color : var(--accent);
+  font-size: var(--font-size-mammoth);
 }
 
 .hero_para_container {
@@ -29,7 +31,7 @@
 
 .hero_para {
   
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-large);
 }
 
 .hero_para,
@@ -41,45 +43,21 @@
   width: 32%;
   height: 35%;
   font-size: var(--font-size-large);
+  font-weight: var(--font-weight-bold);
   border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
-.download_cta_btns {
-  margin: 4.8%;
-  display: flex;
+.hero-cta-btn:hover{
+  background-color: var(--accent);
+  color: white;
+  transition: all 0.5s ease-in-out;
+
 }
 
-.cta_down_play,
-.cta_down_apple {
-  position: relative;
-  margin-right: 4%;
-  display: flex;
-  width: 32%;
-  height: 200%;
-  align-items: center;
-  flex-wrap: wrap;
-  border: none;
-}
 
-.cta_down_play > span,
-.cta_down_apple > span {
-  background-color: black;
-  margin: 0 5% 0 5%;
-  height: 100%;
-}
-
-.play_cont,
-.apple_cont {
-  position: absolute;
-  left: 25%;
-  display: flex;
-}
-
-.play_cont > p,
-.apple_cont > p {
-  margin: 2%;
-  width: 50%;
-}
 
 /* 
   right side */
@@ -293,6 +271,7 @@
 
 .hexa:hover {
   scale: 0.8;
+  background-color: var(--accent);
 }
 
 .hexa:hover,
