@@ -1,13 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Landing from './pages/Landing/LandingPage';
+import Landing from "./pages/Landing/LandingPage";
 
 import "./App.css";
 
-import Login from './Auth/Login';
-import SignUP from './Auth/SignUp';
-
-
+import Login from "./Auth/Login";
+import SignUP from "./Auth/SignUp";
 
 // clamp utility functions below
 
@@ -15,18 +13,17 @@ function clamp(diffValue, min, max) {
   return Math.min(Math.max(diffValue, min), max);
 }
 
-  // below is the details for the cursor
+// below is the details for the cursor
 
-  let xScale = 1;
-  let yScale = 1;
+let xScale = 1;
+let yScale = 1;
 
-  let xPrev = 0;
-  let yPrev = 0;
+let xPrev = 0;
+let yPrev = 0;
 
-  let timeout;
+let timeout;
 
 window.addEventListener("mousemove", (event) => {
-  
   clearTimeout(timeout);
 
   let xdiff = event.clientX - xPrev;
@@ -38,41 +35,36 @@ window.addEventListener("mousemove", (event) => {
   // console.log(event);
 
   if (event.clientY <= 20 || event.clientY >= 710) {
-    document.getElementById("mini-circle").style.transform = `translate(${event.clientX}px, ${event.clientY}px) scale(0, 0)`;
+    document.getElementById(
+      "mini-circle"
+    ).style.transform = `translate(${event.clientX}px, ${event.clientY}px) scale(0, 0)`;
   } else {
     // Only apply the transform if the condition is not met
     xScale = clamp(xdiff, 0.6, 1.2);
     yScale = clamp(ydiff, 0.6, 1.2);
-    document.getElementById("mini-circle").style.transform = `translate(${event.clientX}px, ${event.clientY}px) scale(${xScale}, ${yScale})`;
+    document.getElementById(
+      "mini-circle"
+    ).style.transform = `translate(${event.clientX}px, ${event.clientY}px) scale(${xScale}, ${yScale})`;
+
     timeout = setTimeout(() => {
-      document.getElementById("mini-circle").style.transform = `translate(${event.clientX}px, ${event.clientY}px) scale(1 , 1) `;
-    }, 100)
+      document.getElementById(
+        "mini-circle"
+      ).style.transform = `translate(${event.clientX}px, ${event.clientY}px) scale(1 , 1) `;
+    }, 100);
   }
 });
 
-
 function App() {
-  // const ref = useRef(null);
-
-  // const options = {
-  //   smooth: true,
-  // };
-
-
   return (
     <>
+   
+
       <div id="mini-circle"></div>
-      {/* <LocomotiveScrollProvider options={options} containerRef={ref}>
-        <main data-scroll-container ref={ref}> */}
- 
-        {/* </main>
-    
-      </LocomotiveScrollProvider> */}
 
       <Router>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/signup" element={<SignUP />} /> 
+          <Route path="/signup" element={<SignUP />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </Router>
