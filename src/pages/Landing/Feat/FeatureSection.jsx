@@ -34,7 +34,7 @@ const Feat = () => {
             data-aos-easing="ease-in-out"
           >
             <div className="content">
-              <h5>Create tasks and To-Do lists easily. </h5>
+              <h2>Create tasks and To-Do lists easily. </h2>
               <p className="para">
                 Our web app allow users to create tasks and to-do lists quickly
                 and easily. This Web app include a user-friendly interface and
@@ -60,7 +60,7 @@ const Feat = () => {
             data-aos-easing="ease-in-out"
           >
             <div className="content">
-              <h5>Create tasks and To-Do lists easily. </h5>
+              <h2>Create tasks and To-Do lists easily. </h2>
               <p className="para">
                 Our web app allow users to create tasks and to-do lists quickly
                 and easily. This Web app include a user-friendly interface and
@@ -82,7 +82,7 @@ const Feat = () => {
             data-aos-easing="ease-in-out"
           >
             <div className="content">
-              <h5>Create tasks and To-Do lists easily. </h5>
+              <h2>Create tasks and To-Do lists easily. </h2>
               <p className="para">
                 Our web app allow users to create tasks and to-do lists quickly
                 and easily. This Web app include a user-friendly interface and
@@ -108,7 +108,7 @@ const Feat = () => {
             data-aos-easing="ease-in-out"
           >
             <div className="content">
-              <h5>Create tasks and To-Do lists easily. </h5>
+              <h2>Create tasks and To-Do lists easily. </h2>
               <p className="para">
                 Our web app allow users to create tasks and to-do lists quickly
                 and easily. This Web app include a user-friendly interface and
