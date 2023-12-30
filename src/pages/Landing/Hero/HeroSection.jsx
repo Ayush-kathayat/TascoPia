@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import "./HeroSection.css";
 
@@ -20,7 +21,9 @@ const Hero = () => {
             can easily manage your tasks, set reminders, and track your
             progress.
           </p>
+          <Link to="/login">
           <button className="hero-cta-btn">Create New Task</button>
+          </Link>
         </div>
 
 

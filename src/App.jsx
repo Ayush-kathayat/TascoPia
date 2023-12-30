@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Landing from "./pages/Landing/LandingPage";
+import Home from "./pages/Home/Home";
 
 import "./App.css";
 
@@ -66,10 +67,12 @@ function App() {
           <Route path="/" element={<Landing />} />
           <Route path="/signup" element={<SignUP />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/home" element={<Home/>} />
         </Routes>
       </Router>
     </>
   );
 }
+
 
 export default App;

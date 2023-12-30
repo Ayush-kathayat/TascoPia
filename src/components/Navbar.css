@@ -48,10 +48,7 @@
   width: 25%;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 15%;
-  /* align-items: center;
-  justify-content: flex-start; */
-  gap: 25%;
+  gap: 15%;
   list-style: none;
   padding: 0%;
   font-weight: var(--font-weight-bold);
@@ -108,6 +105,9 @@
   font-size: var(--font-size-xlarge);
   border: none;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -115,14 +115,32 @@
 
 .log-btn {
   background-color: var(--color-background);
-  color: white;
   transition: all 0.5s ease;
 
 }
 
-.log-btn:hover {
+.btn-log , .btn-sign {
+  background: transparent;
+  border: none;
+  color : var(--text);
+  font-size: var(--font-size-large);
+  font-weight: 900;
+  cursor: pointer;
+  
+}
+
+.btn-log:hover , .btn-sign:hover {
+  color : var(--accent);
+  transition: all 0.5s ease;
+}
+
+.log-btn:hover{
   background-color: var(--color-white);
-  color: var(--color-background);
+  transition: all 0.5s ease;
+  color : var(--accent);
+}
+.log-btn:hover > .btn-log{
+  color : var(--color-background);
   transition: all 0.5s ease;
 }
 

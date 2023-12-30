@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+
+import { Link } from "react-router-dom";
+
 import "./Navbar.css";
 
 const Nav = ({ isAuthenticated }) => {
@@ -191,17 +194,23 @@ c216 -256 295 -434 255 -575 -52 -185 -394 -177 -519 12 -84 127 -80 264 15
             <h1 className="app-name">Taskopia</h1>
           </div>
 
-         
-      
           <ul className="nav-links">
-            <li className="links">Home</li>
-            {/* <span className="line"></span> */}
-            <li className="links">About</li>
-            {/* <span className="line"></span> */}
-            <li className="links">Contact</li>
-
-            <li className="links mob-log-btn"><a>login</a></li>
-
+            <Link to="/home" className="links">
+              <li >Home</li>
+            </Link>
+            <Link to="/about" className="links">
+              {" "}
+              <li >About</li>
+            </Link>
+            <Link to="/contact" className="links">
+              {" "}
+              <li >Contact</li>
+            </Link>
+            <Link to="/login" className="links">
+            <li className=" mob-log-btn">
+              <a>login</a>
+            </li>
+            </Link>
           </ul>
 
           <div
@@ -242,8 +251,12 @@ c216 -256 295 -434 255 -575 -52 -185 -394 -177 -519 12 -84 127 -80 264 15
             </div>
           ) : (
             <div className="nav-cta">
-              <button className="nav-btn log-btn">Login</button>
-              <button className="nav-btn sign-btn">Signup</button>
+              <Link to="/login" className="nav-btn log-btn">
+                <button className="btn-log">Login</button>
+              </Link>
+              <Link to="/signup" className="nav-btn sign-btn">
+                <button className="btn-sign">Signup</button>
+              </Link>
             </div>
           )}
         </div>
