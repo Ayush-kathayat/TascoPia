@@ -10,25 +10,25 @@ const Testi = () => {
   const dataset = [
     {
       name: "John Doe",
-      pic: "testi-1.jpg",
+      pic: "testi-1.webp",
       testi:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
     },
     {
       name: "John Doe",
-      pic: "testi-2.jpg",
+      pic: "testi-2.webp",
       testi:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
     },
     {
       name: "John Doe",
-      pic: "testi-3.jpg",
+      pic: "testi-3.webp",
       testi:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
     },
     {
       name: "John Doe",
-      pic: "testi-4.jpg",
+      pic: "testi-4.webp",
       testi:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
     },
