@@ -1,7 +1,39 @@
 import React from "react";
+
 import "./testi.css";
 
+import Carousel from "../../../components/carousel";
+
 const Testi = () => {
+  // below is the dataset for the carousel component
+
+  const dataset = [
+    {
+      name: "John Doe",
+      // pic: "https://picsum.photos/200/300",
+      testi:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
+    },
+    {
+      name: "John Doe",
+      // pic: "https://picsum.photos/200/300",
+      testi:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
+    },
+    {
+      name: "John Doe",
+      // pic: "https://picsum.photos/200/300",
+      testi:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
+    },
+    {
+      name: "John Doe",
+      // pic: "https://picsum.photos/200/300",
+      testi:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
+    },
+  ];
+
   return (
     <>
       {/* <svg
@@ -27,7 +59,11 @@ const Testi = () => {
         >
           <h>TESTIMONIALS</h>
         </div>
+
       </div>
+
+      <Carousel dataset={dataset} />
+      
     </>
   );
 };

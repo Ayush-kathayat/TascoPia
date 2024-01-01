@@ -10,6 +10,7 @@
   font-weight: 900;
   display: inline-block;
   position: relative;
+  color: var(--accent);
 }
 
 .testi-title:hover{
@@ -34,6 +35,18 @@
   transform-origin: bottom left;
 }
 
+
+.card{
+  background-color: var(--accent);
+  border-radius: 10px;
+  padding: 15rem;
+  margin-top: 4rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+  /* width : 50p;
+  height: 50%; */
+  cursor: grabbing;
+}
 
 @media (max-width : 850px) {
 
