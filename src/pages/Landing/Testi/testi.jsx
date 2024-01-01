@@ -28,7 +28,7 @@ const Testi = () => {
     },
     {
       name: "John Doe",
-      pic: "public/testi-4.jpg",
+      pic: "/testi-4.jpg",
       testi:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec justo eget felis facilisis fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue.",
     },
