@@ -10,21 +10,37 @@ const Carousel = ({ dataset }) => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
-    
-  };
+    autoplaySpeed: 1000,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1800, // width to change options
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
+   };
+   
 
   return (
     <>
       <Slider {...settings}>
         {dataset.map((item, index) => (
           <div className="card" key={index}>
-            {/* <img src={item.pic} alt="img" /> */}
-            <h2>{item.name}</h2>
-            <p>{item.testi}</p>
+            <div className="testi-left">
+              <img className="testi-img" src={item.pic} alt="img" />
+            </div>
+            <div className="testi-right">
+              <h2>{item.name}</h2>
+              <p>{item.testi}</p>
+            </div>
           </div>
         ))}
       </Slider>
