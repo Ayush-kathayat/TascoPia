@@ -109,3 +109,26 @@
   }
   
 }
+
+@media (max-width : 450px) {
+
+  .testi-title{
+    font-size: var(--font-size-xhuge);
+    letter-spacing: 0.5rem;
+  }
+  
+  .testi-right > h2{
+    margin-top : 1.2rem;
+    font-size: var(--font-size-xhuge);
+  }
+
+  .testi-right > p{
+    font-size: var(--font-size-normal);
+  }
+
+  .testi-img{
+    width: 100%; /* Or whatever width you prefer */
+    height: 400; /* Or whatever height you prefer */
+    object-fit: cover;
+  }
+}
