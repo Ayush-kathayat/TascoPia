@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
 
           <div className="footer-up-right">
-            <h1>NEWSLETTER</h1>
+            <h1>Newsletter</h1>
 
             <form onSubmit={handleSubmit}>
               <input
@@ -43,45 +43,45 @@ const Footer = () => {
         </div>
 
         <div className="footer-mid">
-          <ul>
+          <ul className="listas">
             <Link to="/about">
-              <li>Home</li>
+              <li className="list">Home</li>
             </Link>
             <Link to="/contact">
-              <li>About us</li>
+              <li className="list">About </li>
             </Link>
             <Link to="/faq">
-              <li>FAQ</li>
+              <li className="list">FAQ</li>
             </Link>
           </ul>
 
-          <ul>
+          <ul className="listas">
             <Link to="">
-              <li>Genral info</li>
+              <li className="list">Genral info</li>
             </Link>
             <Link to="">
-              <li>Privacy Policy</li>
+              <li className="list">Privacy Policy</li>
             </Link>
             <Link to="">
-              <li>Terms of Service</li>
+              <li className="list">Terms of Service</li>
             </Link>
           </ul>
 
-          <ul>
+          <ul className="listas">
             <Link to="/contact">
-              <li>Contact Us</li>
+              <li className="list">Contact </li>
             </Link>
 
             <Link>
-              <li>Instagram</li>
+              <li className="list">Instagram</li>
             </Link>
 
             <Link>
-              <li>Linkedin</li>
+              <li className="list">Linkedin</li>
             </Link>
 
             <Link>
-              <li>Twitter</li>
+              <li className="list">Twitter</li>
             </Link>
           </ul>
         </div>

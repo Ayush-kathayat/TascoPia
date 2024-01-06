@@ -17,16 +17,49 @@
 
 }
 
+.footer-up-left{
+margin-right: 30%; 
+}
+
+/* .footer-up-right{
+
+} */
+
+.footer-up-left > h1{
+  font-size: var(--font-size-mammoth);
+  font-weight: var(--font-weight-bold);
+  color: var(--accent);
+}
+
+
+.footer-up-right > h1{
+  font-size: var(--font-size-mammoth);
+  font-weight: var(--font-weight-bold);
+  color: var(--accent);
+}
+
+
 
 /* styles for the footer mid section */
 
 .footer-mid{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 10%;
   align-items: center;
 }
+
+
+.listas{
+  list-style-type: none;
+  font-size: var(--font-size-medium);
+}
+
+.list{
+  margin-bottom : 5%;
+}
+
 
 /* styles for the footer bottom section */
 
