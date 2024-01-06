@@ -1,4 +1,44 @@
-.footer{
-  text-align: center;
-  margin-top : 5%;
+.footer-wrapper{
+  /* text-align: center; */
+  margin-top : 20%;
+  margin-bottom : 5%;
+}
+
+
+
+/* styles for the footer up section  */
+
+.footer-up{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  align-items: center;
+
+}
+
+
+/* styles for the footer mid section */
+
+.footer-mid{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10%;
+  align-items: center;
+}
+
+/* styles for the footer bottom section */
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  align-items: center;
+}
+
+.social-icons{
+  display: flex;
+  gap: 10px;
 }
