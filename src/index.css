@@ -206,3 +206,18 @@ html.lenis {
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
+
+
+/* ::placeholder { 
+  text-indent: 6%;
+}
+
+:-ms-input-placeholder { 
+  text-indent: 6%;
+}
+
+::-ms-input-placeholder { 
+  text-indent: 6%;
+} */
+
+

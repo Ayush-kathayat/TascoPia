@@ -66,14 +66,20 @@ margin-right: 30%;
   border : 1px solid var(--accent);
   padding : 1% 2%;
   border-radius : 60px;
-  width : 90%;
+  width : 80%;
   height: 50px;
   font-size: var(--font-size-medium);
   color : var(--text);
   transition: 0.8s ease-in-out;
   outline: none;
   margin-right: 5%; 
-  
+  padding-left : 8%;  
+}
+
+.feather-send{
+  font-size: var(--font-size-mammoth);
+  color: var(--accent);
+  transition: 0.5s ease-in-out;
 }
 
 .footer-btn-submit{
@@ -86,6 +92,19 @@ margin-right: 30%;
   overflow : hidden;
   background: transparent;
   border : 1px solid var(--accent);
+}
+
+.footer-btn-submit:hover {
+  cursor : pointer;
+  background-color: var(--accent);
+  transition: 0.5s ease-in-out;
+}
+
+.footer-btn-submit:hover .feather-send{
+  transform: scale(1.2);
+  cursor : pointer;
+  transition: 0.5s ease-in-out;
+  color : var(--primary);
 }
 
 .input-wrapper{
