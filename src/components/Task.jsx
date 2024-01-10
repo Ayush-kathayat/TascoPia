@@ -73,7 +73,6 @@ const Task = () => {
       clickedElement.classList.remove("task-clicked");
     }
 
-
     // Add the "task-clicked" class to the newly clicked element
     elem.classList.add("task-clicked");
 
@@ -86,36 +85,38 @@ const Task = () => {
 
   return (
     <>
-      <div className="task-list-wrapper">
-        <h1 className="task-list-title">MY TASKS</h1>
+      <div className="body-wrapper">
+        <div className="task-list-wrapper" data-aos="fade-right">
+          <h1 className="task-list-title">MY TASKS</h1>
 
-        <ul className="task-list" onClick={handleTaskOnClick}>
-          {tasks.map((task) => (
-            <li key={task.id} className="task" id={task.id}>
-              {task.name}
-            </li>
-          ))}
-        </ul>
+          <ul className="task-list" onClick={handleTaskOnClick}>
+            {tasks.map((task) => (
+              <li key={task.id} className="task" id={task.id}>
+                {task.name}
+              </li>
+            ))}
+          </ul>
 
-        <form
-          className="task-input-wrapper"
-          action=""
-          onSubmit={handleSubmitForm}
-        >
-          <button className="task-enter">+</button>
-          <input
-            type="text"
-            id="task-input"
-            spellCheck="false"
-            autoComplete="off"
-            placeholder= "ENTER YOUR TASK"
-            onChange={handleOnChange}
-            value={inputTaskData}
-          />
-        </form>
+          <form
+            className="task-input-wrapper"
+            action=""
+            onSubmit={handleSubmitForm}
+          >
+            <button className="task-enter">+</button>
+            <input
+              type="text"
+              id="task-input"
+              spellCheck="false"
+              autoComplete="off"
+              placeholder="ENTER YOUR TASK"
+              onChange={handleOnChange}
+              value={inputTaskData}
+            />
+          </form>
+        </div>
+
+        <Subtask task={latestTask} />
       </div>
-
-      <Subtask task={latestTask} />
     </>
   );
 };

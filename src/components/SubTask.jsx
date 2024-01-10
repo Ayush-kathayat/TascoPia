@@ -99,7 +99,7 @@ const Subtask = ({ task }) => {
 
   return (
     <>
-      <div className="subtask-wrapper">
+      <div className="subtask-wrapper" data-aos="fade-left">
         <div className="subtask-nav">
           {task && task.name.trim() !== "" ? (
             <h2 className="taskname">{task.name}</h2>

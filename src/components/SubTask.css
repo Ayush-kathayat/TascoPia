@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: stretch;
   flex-wrap: nowrap;
+  margin-top: 8%;
 }
 
 .subtask-nav {
