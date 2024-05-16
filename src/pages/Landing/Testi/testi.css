@@ -40,16 +40,13 @@
   background-color: var(--secondary);
   border-radius: 10px;
   padding: 5rem;
-  margin-top: 4rem;
+  margin-top: 14rem;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   transition: all 0.3s ease-in-out;
-  /* width : 50p;
-  height: 50%; */
   cursor: grabbing;
   display: flex !important;
   flex-direction: row;
-  /* overflow-x: hidden !important; */
-
+  
 }
 
 .testi-img{

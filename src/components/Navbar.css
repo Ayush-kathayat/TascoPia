@@ -2,6 +2,7 @@
   /* position: fixed; */
   top: 0;
   width: 100%;
+  margin-top: 1%;
 }
 
 .nav {
@@ -40,8 +41,6 @@
 .app-name {
   font-size: var(--font-size-mammoth);
   color: var(--accent);
-  margin-bottom: 5%;
-
 }
 
 .nav-links {
@@ -54,25 +53,24 @@
   font-weight: var(--font-weight-bold);
 }
 
-
 .links {
   position: relative;
   color: white;
 }
 
-.links:hover{
+.links:hover {
   cursor: pointer;
 }
 
 .links:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color:  white;
+  background-color: white;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -95,7 +93,7 @@
   justify-content: center;
   align-items: center;
   width: 15%;
-  margin-right : 1%;
+  margin-right: 1%;
 }
 
 .nav-btn {
@@ -111,49 +109,46 @@
   cursor: pointer;
 }
 
-
-
 .log-btn {
-  background-color: var(--color-background);
+  background-color: var(--primary);
   transition: all 0.5s ease;
-
 }
 
-.btn-log , .btn-sign {
+.btn-log,
+.btn-sign {
   background: transparent;
   border: none;
-  color : var(--text);
+  color : var(--accent);
   font-size: var(--font-size-large);
   font-weight: 900;
   cursor: pointer;
-  
 }
 
-.btn-log:hover , .btn-sign:hover {
-  color : var(--accent);
-  transition: all 0.5s ease;
-}
-
-.log-btn:hover{
+.log-btn:hover {
   background-color: var(--color-white);
   transition: all 0.5s ease;
-  color : var(--accent);
+  color: var(--accent);
 }
-.log-btn:hover > .btn-log{
-  color : var(--color-background);
-  transition: all 0.5s ease;
-}
-
-.sign-btn {
-  background-color: var(--accent);
+.log-btn:hover > .btn-log {
   color: var(--color-background);
   transition: all 0.5s ease;
 }
 
+.sign-btn {
+  background-color: var(--secondary);
+  color: var(--color-background);
+  transition: all 0.5s ease;
+  border: 2px solid var(--secondary);
+}
+
 .sign-btn:hover {
   background-color: var(--color-background);
-  color: var(--color-white);
   transition: all 0.5s ease;
+  border: 2px solid var(--accent);
+}
+
+.sign-btn:hover > .btn-sign {
+  color: var(--accent);
 }
 
 .mobile-navbar-btn {
@@ -166,10 +161,8 @@
   display: none;
 }
 
-
-
-.mob-log-btn{
-  display : none;
+.mob-log-btn {
+  display: none;
 }
 
 @media (max-width: 1160px) {
@@ -193,7 +186,7 @@
     transform: translateX(-110%);
     transition: all 0.5s ease;
     margin-left: 2.5%;
-    gap : 0%;
+    gap: 0%;
   }
 
   .nav-links > span {
@@ -201,7 +194,7 @@
   }
 
   .links {
-    color : black;
+    color: black;
     transition: all 0.5s ease;
     /* height: -21vh; */
     width: auto;
@@ -209,7 +202,7 @@
     margin: 5%;
   }
 
-  .links::after{
+  .links::after {
     background-color: black;
   }
 
@@ -227,7 +220,7 @@
 
   .mobile-navbar-btn {
     display: block;
-    margin-left: 50% ;
+    margin-left: 50%;
   }
 
   .active > .nav-links {
@@ -245,14 +238,11 @@
     display: none;
   }
 
-  .mob-log-btn{
-    display : block;
+  .mob-log-btn {
+    display: block;
   }
 
-  .mob-log-btn > a{
-    color : black;
-  };
-
-
- 
+  .mob-log-btn > a {
+    color: black;
+  }
 }
