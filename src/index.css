@@ -10,7 +10,6 @@
 }
 
 /* Root CSS Variables */
-
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -44,6 +43,22 @@
   --accent: #00ffff; */
   --visited: #eeeeee;
   --error: #ff204e;
+  
+  
+  /* Theme-4 */
+  /* --text : white;
+  --background : #100811;
+  --primary: #c39acf;
+  --secondary:#6f354a;
+  --accent:#ba6f74; */
+
+  /* Theme-5 */
+
+  /* --text: hsl(160, 60%, 98%);
+  --background: #070706;
+  --primary: #c1bfaf;
+  --secondary: #565e49;
+  --accent: #97a389; */
 
   background-color: var(--background);
   color: var(--text);

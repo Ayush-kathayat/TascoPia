@@ -12,5 +12,6 @@
 .login-right{
   height: 100vh;
   width : 50%;
-  background: url(/auth.svg) no-repeat center center;
+  background: url(/auth.svg) no-repeat center;
+  background-size: cover;
 }
