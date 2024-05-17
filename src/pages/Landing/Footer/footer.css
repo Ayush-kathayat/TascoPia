@@ -4,13 +4,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
+  /* position: relative; */
   /* margin-top: 20%; */
+}
+.layer{
+  background-image : url('./wave-footer.svg');
 }
 
 .footer-wrapper {
   background: var(--primary);
 }
+
 
 /* styles for the footer mid section */
 
