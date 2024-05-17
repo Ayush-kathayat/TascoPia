@@ -13,11 +13,11 @@ const theme = createTheme({
     MuiAccordion: {
       styleOverrides: {
         root: {
-          backgroundColor: "#262527",
+          backgroundColor: "	#0c2c21",
           fontSize: "2.5rem",
           fontWeight: "bold",
           cursor: "pointer",
-          opacity: "0.5",
+          opacity: "0.8",
           color: "#fff",
           "&:hover": {
             opacity: "1",
@@ -109,3 +109,4 @@ const Faq = () => {
 };
 
 export default Faq;
+
