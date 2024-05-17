@@ -16,7 +16,7 @@
 
 .hero_title {
   margin: 5%;
-  color : var(--accent);
+  color: var(--accent);
   font-size: var(--font-size-mammoth);
 }
 
@@ -30,7 +30,6 @@
 }
 
 .hero_para {
-  
   font-size: var(--font-size-large);
 }
 
@@ -48,16 +47,17 @@
   cursor: pointer;
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
+  background-color: var(--secondary);
+  color: var(--text);
 }
 
-.hero-cta-btn:hover{
-  background-color: var(--secondary);
-  border : 2px solid var(--accent);
-  color: white;
+.hero-cta-btn:hover {
+  color: var(--accent);
+
+  border: 2px solid var(--accent);
+  background-color: var(--background);
   transition: all 0.5s ease-in-out;
 }
-
-
 
 /* 
   right side */
@@ -77,7 +77,7 @@
   width: 125.98px;
   height: 125.98px;
   margin: 0px 0px;
-  background-color: white;
+  background-color: var(--accent);
   clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
   transform: translate(130px, 50px);
 }
@@ -91,7 +91,7 @@
   width: 116.39px;
   height: 116.39px;
   margin: 0px 0px;
-  background-color: white;
+  background-color: var(--accent);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -105,7 +105,7 @@
   width: 253.35px;
   height: 253.35px;
   margin: 0px 20px;
-  background-color: white;
+  background-color: var(--accent);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -118,7 +118,7 @@
   width: 125.98px;
   height: 125.98px;
   margin: 0px 0px;
-  background-color: white;
+  background-color: var(--accent);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -136,7 +136,7 @@
   width: 253.35px;
   height: 253.35px;
   margin: 0px 0px;
-  background-color: white;
+  background-color: var(--accent);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -150,7 +150,7 @@
   width: 160.22px;
   height: 160.22px;
   margin: 0px 20px;
-  background-color: white;
+  background-color: var(--accent);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -240,15 +240,13 @@
     margin-top: 10%;
   }
 
-  .hero_title{
+  .hero_title {
     font-size: var(--font-size-mammoth);
   }
 
-  .hero_para{
+  .hero_para {
     font-size: var(--font-size-large);
   }
-
-
 }
 
 @media (max-width: 600px) {
@@ -256,11 +254,11 @@
     padding-top: 30%;
   }
 
-  .hero_title{
+  .hero_title {
     font-size: var(--font-size-xhuge);
   }
 
-  .hero_para{
+  .hero_para {
     font-size: var(--font-size-normal);
   }
 }
@@ -271,7 +269,6 @@
 
 .hexa:hover {
   scale: 0.8;
-  background-color: var(--accent);
 }
 
 .hexa:hover,

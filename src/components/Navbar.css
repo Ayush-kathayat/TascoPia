@@ -61,7 +61,7 @@
 .links:hover {
   cursor: pointer;
 }
-
+/* 
 .links:after {
   content: "";
   position: absolute;
@@ -78,7 +78,7 @@
 .links:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
+} */
 
 .line {
   height: 2rem;
@@ -122,6 +122,10 @@
   font-size: var(--font-size-large);
   font-weight: 900;
   cursor: pointer;
+}
+
+.btn-log{
+  color : var(--secondary);
 }
 
 .log-btn:hover {

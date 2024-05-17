@@ -13,6 +13,7 @@
 
 .footer-wrapper {
   background: var(--primary);
+
 }
 
 
@@ -46,6 +47,7 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 5%;
+  padding-bottom : 5%;
   align-items: center;
 }
 
@@ -58,7 +60,7 @@
   font-size: var(--font-size-mammoth);
   font-weight: 900;
   letter-spacing: 1rem;
-  /* color: var(--accent); */
+  color: var(--accent);
 }
 
 

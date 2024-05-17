@@ -1,12 +1,17 @@
+/*import fonts*/
+@import url(https://fonts.bunny.net/css?family=lato:300|open-sans:300|playfair-display:400|poppins:200|roboto:100);
+
+/* CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Root CSS Variables */
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  /* color-scheme: light dark; */
-  /* color: rgba(255, 255, 255, 0.87);
-  background-color: #242424; */
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -24,76 +29,38 @@
 
   /* Theme-2 */
 
-  /* --text: hsl(160, 60%, 98%);
+  --text: hsl(160, 60%, 98%);
   --background: hsl(160, 60%, 7%);
   --primary: hsl(160, 59%, 49%);
   --secondary: hsl(160, 58%, 11%);
-  --accent: hsl(160, 59%, 51%); */
+  --accent: hsl(160, 59%, 51%);
 
   /* Theme-3 */
 
-  --text: hsl(270, 77%, 95%);
+  /* --text: hsl(270, 77%, 95%);
   --background: #171617;
   --primary: #444241;
   --secondary: #262527;
-  --accent: #00ffff;
+  --accent: #00ffff; */
+  --visited: #eeeeee;
+  --error: #ff204e;
 
   background-color: var(--background);
-
-  /* relative-sizes */
-
-  /* Font size variables */
-  --font-xs: 0.75rem; /* Extra small font size */
-  --font-sm: 0.875rem; /* Small font size */
-  --font-md: 1rem; /* Medium font size (usually the default body font size) */
-  --font-lg: 1.125rem; /* Large font size */
-  --font-xl: 1.5rem; /* Extra large font size */
-  --font-xxl: 2rem; /* Double extra large font size */
-
-  /* Font size for headings */
-  --heading-h1: 2.25rem;
-  --heading-h2: 1.875rem;
-  --heading-h3: 1.5rem;
-  --heading-h4: 1.25rem;
-  --heading-h5: 1.125rem;
-  --heading-h6: 1rem;
-
-  /* Line heights */
-  --line-height-xs: 1.2; /* Extra small line height */
-  --line-height-sm: 1.4; /* Small line height */
-  --line-height-md: 1.6; /* Medium line height (usually the default body line height) */
-  --line-height-lg: 1.8; /* Large line height */
-  --line-height-xl: 2; /* Extra large line height */
-
-
-  /* COLORS */
-
-  --color-background: #0d1117;
-
-  /* TODO: focus and visited color to be different */
-  --color-text-anchor-focus: #40a9ff;
-  --color-text-anchor-visited: #005086;
-  --color-white: #fff;
-  --color-white-90: rgb(255 255 255 / 0.9);
-  --color-white-75: rgb(255 255 255 / 0.75);
-  --color-white-50: rgb(255 255 255 / 0.5);
-  --color-white-10: rgb(255 255 255 / 0.1);
-
-  /* ====== */
+  color: var(--text);
 
   /* FONTS */
 
-  --font-family-body: "Oxanium", cursive;
-  /* --font-family-title: "Poppins", "Helvetica Neue", helvetica, arial,
-     sans-serif;
-   --font-family-display: "Poppins", "Helvetica Neue", helvetica, arial,
-     sans-serif;
-   --font-family-mono: source-code-pro, "Menlo", "Monaco", "Consolas",
-     "Courier New", monospace;
-   --font-family-input: var(--font-family-body);  */
+  --primary-font: "Roboto", sans-serif; /* --primary-font represents the main font used throughout the project. This could be used for headers, subheaders, and primary body text. */
+  --secondary-font: "Lato", sans-serif; /*--secondary-font could represent a secondary font used for less important text or for emphasizing certain sections of the content.*/
+  --form-font: "Open Sans", sans-serif; /*--form-font is intended for form fields and buttons.*/
+  --cta-font: "Poppins", sans-serif; /* --cta-font stands for Call To Action font, typically used for buttons that lead to important actions.*/
+  --subtitle-font: "Playfair Display", serif; /*--subtitle-font is used for subtitles and secondary headings.*/
 
-  /* type scale 1.2 (https://type-scale.com/) */
   --font-size-em: 1.2em;
+  --font-size-xdinormous: 5.854rem;
+  --font-size-dinormous: 4.854rem;
+  --font-size-xxmammoth: 3.752rem;
+  --font-size-xmammoth: 3.052rem;
   --font-size-mammoth: 2.488rem;
   --font-size-xhuge: 2.074rem;
   --font-size-huge: 1.728rem;
@@ -104,19 +71,13 @@
   --font-size-small: 0.833rem;
   --font-size-tiny: 0.579rem;
 
-  /* line heights */
-  --line-height: 1.5;
-  --line-height-thin: 1.25;
-
   /* weights */
+  --font-weight-bolder: 900;
   --font-weight-bold: 600;
   --font-weight-semibold: 500;
   --font-weight-normal: 400;
   --font-weight-light: 300;
   --font-weight-thin: 200;
-
-  /* ====== */
-
 }
 
 ::-webkit-scrollbar {
@@ -124,24 +85,18 @@
   background: transparent; /* make scrollbar transparent */
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
+html,
+body {
   height: 100%;
   position: relative;
 }
-
 
 body {
   color: var(--text);
   background-color: var(--background);
   font-size: var(--font-md);
   line-height: var(--line-height-md);
-  padding: 0 ;
+  padding: 0;
   margin: 0;
   overflow-x: hidden;
 }
@@ -181,12 +136,11 @@ a:hover {
   color: var(--text);
 }
 
-.unique{
+.unique {
   color: var(--accent);
 }
 
 /* smooth scroll css */
-
 
 html.lenis {
   height: auto;
@@ -208,7 +162,6 @@ html.lenis {
   pointer-events: none;
 }
 
-
 /* ::placeholder { 
   text-indent: 6%;
 }
@@ -220,5 +173,3 @@ html.lenis {
 ::-ms-input-placeholder { 
   text-indent: 6%;
 } */
-
-

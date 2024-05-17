@@ -60,7 +60,7 @@ function App() {
     <>
    
 
-      <div id="mini-circle"></div>
+      {/* <div id="mini-circle"></div> */}
 
       <Router>
         <Routes>
