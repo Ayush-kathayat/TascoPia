@@ -1,107 +1,15 @@
+.spacer {
+  aspect-ratio: 960/300;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  /* margin-top: 20%; */
+}
+
 .footer-wrapper {
-  /* text-align: center; */
-  margin-top: 20%;
-  margin-bottom: 5%;
-}
-
-/* styles for the footer up section  */
-
-.footer-up {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-top: 5%;
-  align-items: center;
-}
-
-.footer-up-left {
-  margin-right: 30%;
-}
-
-.footer-up-left > h1 {
-  font-size: var(--font-size-mammoth);
-  font-weight: var(--font-weight-bold);
-  color: var(--accent);
-}
-
-.footer-up-right > h1 {
-  font-size: var(--font-size-mammoth);
-  font-weight: var(--font-weight-bold);
-  color: var(--accent);
-}
-
-.footer-btn {
-  background: transparent;
-  border: 1px solid var(--accent);
-  padding: 1% 2%;
-  border-radius: 60px;
-  width: 50%;
-  height: 50px;
-  font-size: var(--font-size-medium);
-  color: var(--text);
-  transition: 0.8s ease-in-out;
-  margin-top: 5%;
-}
-
-.footer-btn:hover {
-  background: var(--accent);
-  color: var(--primary);
-  font-weight: 900;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
-
-.footer-input {
-  background: transparent;
-  border: 1px solid var(--accent);
-  padding: 1% 2%;
-  border-radius: 60px;
-  width: 80%;
-  height: 50px;
-  font-size: var(--font-size-medium);
-  color: var(--text);
-  transition: 0.8s ease-in-out;
-  outline: none;
-  margin-right: 5%;
-  padding-left: 8%;
-}
-
-.feather-send {
-  font-size: var(--font-size-mammoth);
-  color: var(--accent);
-  transition: 0.5s ease-in-out;
-}
-
-.footer-btn-submit {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: transparent;
-  border: 1px solid var(--accent);
-}
-
-.footer-btn-submit:hover {
-  cursor: pointer;
-  background-color: var(--accent);
-  transition: 0.5s ease-in-out;
-}
-
-.footer-btn-submit:hover .feather-send {
-  transform: scale(1.2);
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-  color: var(--primary);
-}
-
-.input-wrapper {
-  display: flex;
-  align-items: center;
-  margin-top: 5%;
-  width: 155%;
+  background: var(--primary);
 }
 
 /* styles for the footer mid section */
@@ -148,13 +56,7 @@
   letter-spacing: 1rem;
   /* color: var(--accent); */
 }
-/* 
-.footer-icons{
-  font-size: var(--font-size-mammoth);
-  color: var(--text);
-  transition: 0.5s ease-in-out;
 
-} */
 
 .feather:hover {
   cursor: pointer;
@@ -162,27 +64,6 @@
 }
 
 @media (max-width: 450px) {
-  .footer-up-right {
-    display: none;
-  }
-
-  .footer-up-left {
-    margin-right: 0%;
-  }
-
-  .footer-up-left > h1 {
-    font-size: var(--font-size-xhuge);
-    font-weight: var(--font-weight-bold);
-    color: var(--accent);
-  }
-
-  .footer-btn {
-    padding: 1% 2%;
-    border-radius: 60px;
-    width: 35%;
-    height: 45px;
-    font-size: var(--font-size-nomal);
-  }
 
   .list {
     margin-bottom: 2%;

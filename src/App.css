@@ -18,22 +18,7 @@
   margin-bottom: 15%;
 }
 
-.spacer {
-  aspect-ratio: 960/300;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
 
-.layer1 {
-  background-image: url("./assets/waves.svg");
-}
-
-.layer2 {
-  background-image: url("./assets/waves-up.svg");
-}
 
 /* the mini-circle */
 
