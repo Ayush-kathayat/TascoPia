@@ -1,40 +1,27 @@
 .testi-title-wrapper{
+  margin-top : 5%;
   display: flex;
   justify-content: center;
 }
 
-.testi-title {
-  margin-top: 20%;
+.testi-title{
+  margin-top : 10%; 
   letter-spacing: 2rem;
-  font-size: var(--font-size-mammoth);
-  font-weight: 900;
+  font-size : var(--font-size-mammoth);
+  font-family : var(--secondary-font);
+  font-weight: var(--font-weight-bolder);
   display: inline-block;
   position: relative;
-  color: var(--accent);
 }
 
 .testi-title:hover{
   cursor : pointer;
 }
 
-.testi-title:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
 
-.testi-title:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.testi-title > h{
+  color : var(--accent);
 }
-
 
 .card{
   background-color: var(--secondary);

@@ -12,10 +12,8 @@
 }
 
 .footer-wrapper {
-  background: var(--primary);
-
+  background-color: var(--secondary);
 }
-
 
 /* styles for the footer mid section */
 
@@ -30,6 +28,7 @@
 .listas {
   list-style-type: none;
   font-size: var(--font-size-medium);
+  font-family: var(--cta-font);
 }
 
 .list {
@@ -58,11 +57,15 @@
 
 .footer-bottom > h1 {
   font-size: var(--font-size-mammoth);
+  font-family : var(--secondary-font);
   font-weight: 900;
   letter-spacing: 1rem;
   color: var(--accent);
 }
 
+.footer-bottom > p{
+  font-family : var(--cta-font);
+}
 
 .feather:hover {
   cursor: pointer;

@@ -1,5 +1,4 @@
 .wrapper {
-  /* position: fixed; */
   top: 0;
   width: 100%;
   margin-top: 1%;
@@ -19,6 +18,7 @@
   justify-content: flex-start;
   align-items: flex-end;
   flex-wrap: wrap;
+  font-family : var(--form-font)
 }
 
 .MyLogo {
@@ -26,17 +26,6 @@
   margin: 1%;
 }
 
-.skull-2 {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-right: 12%;
-}
-
-.skull-2 > .MyLogo {
-  display: none;
-}
 
 .app-name {
   font-size: var(--font-size-mammoth);
@@ -51,6 +40,8 @@
   list-style: none;
   padding: 0%;
   font-weight: var(--font-weight-bold);
+  font-size : var(--font-size-medium);
+  font-family : var(--cta-font);
 }
 
 .links {
@@ -61,24 +52,6 @@
 .links:hover {
   cursor: pointer;
 }
-/* 
-.links:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.links:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-} */
 
 .line {
   height: 2rem;
@@ -119,9 +92,11 @@
   background: transparent;
   border: none;
   color : var(--accent);
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-huge);
   font-weight: 900;
   cursor: pointer;
+  font-family : var(--secondary-font);
+
 }
 
 .btn-log{

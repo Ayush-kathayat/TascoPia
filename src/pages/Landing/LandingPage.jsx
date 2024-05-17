@@ -15,10 +15,9 @@ const Landing = () => {
       <Nav isAuthenticated={false} />
       <Hero />
       <Feat />
-      <Testi />
+      {/* <Testi /> */}
       <Faq />
       <Footer />
-
     </>
   );
 };

@@ -36,7 +36,9 @@ const Nav = ({ isAuthenticated }) => {
       <div className="wrapper" data-aos="fade-down">
         <div className={showMobMenu ? "active nav" : "nav"}>
           <div className="logo-title">
-            <h1 className="app-name">Taskopia</h1>
+            <Link to="/">
+              <h1 className="app-name">Taskopia</h1>
+            </Link>
           </div>
 
           <ul className="nav-links">

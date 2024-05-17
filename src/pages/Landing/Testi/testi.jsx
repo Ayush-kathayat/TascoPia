@@ -38,12 +38,12 @@ const Testi = () => {
     <>
      
       <div className="testi-title-wrapper">
-        <div
+      <div
           className="testi-title"
-          // data-aos="fade-down"
-          // data-aos-delay="50"
-          // data-aos-duration="1000"
-          // data-aos-easing="ease-in-out"
+          data-aos="fade-down"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
         >
           <h>TESTIMONIALS</h>
         </div>

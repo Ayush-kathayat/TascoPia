@@ -1,5 +1,5 @@
 .hero_section {
-  padding-top: 15%;
+  padding-top: 10%;
   height: 100vh;
   display: flex;
 }
@@ -17,11 +17,13 @@
 .hero_title {
   margin: 5%;
   color: var(--accent);
-  font-size: var(--font-size-mammoth);
+  font-size: var(--font-size-xxmammoth);
+  font-family : var(--primary-font);
+  font-weight : var(--font-weight-bolder);
 }
 
 .hero_para_container {
-  border: 1px solid white; /* Example border */
+  border: 2px solid var(--accent); /* Example border */
   border-top: none; /* Hide the top border */
   border-right: none; /* Hide the left border */
   margin: 5%;
@@ -30,8 +32,10 @@
 }
 
 .hero_para {
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-xlarge);
+  font-family : var(--secondary-font);
   text-align: justify;
+
 
 }
 
@@ -43,8 +47,9 @@
 .hero-cta-btn {
   width: 32%;
   height: 32%;
-  font-size: var(--font-size-large);
+  font-size: var(--font-size-xlarge);
   font-weight: var(--font-weight-bold);
+  font-family : var(--cta-font);
   border: 2px solid var(--background);
   cursor: pointer;
   border-radius: 5px;
