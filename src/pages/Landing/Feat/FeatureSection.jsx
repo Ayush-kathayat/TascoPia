@@ -18,15 +18,6 @@ const Feat = () => {
 
       <div className="feat-wrapper">
         <div className="feat-right">
-
-          {/* <div
-            className="circles circle-r1"
-            data-aos="fade-right"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          ></div> */}
-
           <div
             className="feats feat-r1"
             data-aos="fade-right"
@@ -44,14 +35,6 @@ const Feat = () => {
               </p>
             </div>
           </div>
-
-          {/* <div
-            className="circles circle-r2"
-            data-aos="fade-right"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          ></div> */}
 
           <div
             className="feats feat-r2"
@@ -93,14 +76,6 @@ const Feat = () => {
             </div>
           </div>
 
-          {/* <div
-            className="circles circle-l1"
-            data-aos="fade-left"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          ></div> */}
-
           <div
             className="feats feat-l2"
             data-aos="fade-left"
@@ -118,15 +93,8 @@ const Feat = () => {
               </p>
             </div>
           </div>
-{/* 
-          <div
-            className="circles circle-l2"
-            data-aos="fade-left"
-            data-aos-delay="50"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          ></div> */}
         </div>
+        
       </div>
     </>
   );
