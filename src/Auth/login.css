@@ -6,7 +6,7 @@
 .login-left{
   height: 100vh;
   width : 50%;
-  background-color: var(--secondary);
+  /* background-color: var(--secondary); */
 }
 
 .login-right{

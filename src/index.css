@@ -1,5 +1,6 @@
 /*import fonts*/
-@import url(https://fonts.bunny.net/css?family=lato:300|open-sans:300|playfair-display:400|poppins:200|roboto:100);
+@import url(https://fonts.bunny.net/css?family=lato:300|open-sans:300|playfair-display:400|poppins:200|roboto:100|aboreto:400);
+
 
 /* CSS Reset */
 
@@ -70,6 +71,7 @@
   --form-font: "Open Sans", sans-serif; /*--form-font is intended for form fields and buttons.*/
   --cta-font: "Poppins", sans-serif; /* --cta-font stands for Call To Action font, typically used for buttons that lead to important actions.*/
   --subtitle-font: "Playfair Display", serif; /*--subtitle-font is used for subtitles and secondary headings.*/
+  --heading-font: "aboreto", sans-serif; /*--heading-font is used for headings and titles.*/
 
   --font-size-em: 1.2em;
   --font-size-xdinormous: 5.854rem;
