@@ -7,18 +7,18 @@ import Testi from "./Testi/testi";
 import Faq from "./Faq/faq";
 import Footer from "./Footer/footer";
 
-
+import "./landing.css"
 
 const Landing = () => {
   return (
-    <>
+    <div className="landing">
       <Nav isAuthenticated={false} />
       <Hero />
       <Feat />
       {/* <Testi /> */}
       <Faq />
       <Footer />
-    </>
+    </div>
   );
 };
 

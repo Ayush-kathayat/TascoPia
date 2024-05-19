@@ -1,17 +1,21 @@
-.register{
+.register {
   display: flex;
+  background-image: url("/background-auth.svg");
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-size: cover; /* Adjust the size */
+  background-position: center; /* Center the background */
 }
 .register-right {
   width: 50%;
   height: 100vh;
-  display : flex;
-  justify-content : center;
-  align-items : center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.register-left{
+.register-left {
   height: 100vh;
-  width : 50%;
+  width: 50%;
   background: url(/auth-2.svg) no-repeat center;
   background-size: cover;
 }
@@ -25,6 +29,7 @@
   height: 90vh;
   width: 65%;
   margin: 1.5rem;
+  /* border : 2px solid var(--accent) */
 }
 
 .form {
@@ -69,7 +74,7 @@
   font-family: var(--heading-font);
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  margin-bottom : 3rem;
+  margin-bottom: 3rem;
 }
 
 .btn {
@@ -86,7 +91,7 @@
   font-family: var(--cta-font);
   cursor: pointer;
   padding: 5px 10px;
- 
+
   transition: 0.3s ease-in-out;
   letter-spacing: 0.1em;
 }
@@ -102,20 +107,20 @@
   border: 1px solid var(--accent);
 }
 
-.auth-link{
+.auth-link {
   color: var(--text);
   font-family: var(--cta-font);
   text-decoration: none;
   margin-top: 1rem;
 }
 
-.psswd-input{
+.psswd-input {
   position: relative;
 }
 
 .input-password {
   width: 88%;
-  margin-right : 6rem;
+  margin-right: 6rem;
 }
 
 .eye-icon {
@@ -125,6 +130,6 @@
   right: 45px; /* Adjust as needed */
 }
 
-.submit-btn{
+.submit-btn {
   margin-top: 5rem;
 }

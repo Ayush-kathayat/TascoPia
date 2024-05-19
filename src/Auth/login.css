@@ -1,6 +1,10 @@
 
 .login{
   display :flex;
+  background-image: url("/background-auth2.svg");
+  background-repeat: no-repeat; /* Prevent repeating */
+  background-size: cover; /* Adjust the size */
+  background-position: center; /* Center the background */
 }
 
 .login-left{
