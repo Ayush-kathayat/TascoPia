@@ -1,13 +1,16 @@
 import React from "react";
 
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { LineWave } from "react-loader-spinner";
+import { useState } from "react";
 
 import { toast } from "react-toastify";
 import { Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import { Link } from "react-router-dom";
 
 import "./signUp.css";
 
@@ -17,6 +20,8 @@ import "./signUp.css";
 
 const SignUP = () => {
   // const { setIsLoginForm } = useContext(LoginFormContext);
+  const [showPassword, setShowPassword] = useState(false);
+  const [activeInputPassword, setActiveInputPassword] = useState(false);
 
   const notifySuccess = (message) =>
     toast.success(message, {
@@ -63,17 +68,13 @@ const SignUP = () => {
     } else {
       reset();
       notifySuccess("Registration Successfull");
-      setIsLoginForm(false);
-      navigate("/");
+      navigate("/login");
     }
   };
 
   return (
     <div className="register">
-      <div className="register-left">
-
-      </div>
-
+      <div className="register-left"></div>
 
       <div className="register-right">
         <div className="form-wrapper">
@@ -97,12 +98,33 @@ const SignUP = () => {
             {errors.username && (
               <p className="form-errors">{errors.username.message}</p>
             )}
-            <input
-              className="input input-password"
-              type="password"
-              placeholder="Password"
-              {...register("password")}
-            />
+            <div className="psswd-input">
+              <input
+                className="input input-password"
+                type={showPassword ? "text" : "password"}
+                placeholder="Password"
+                {...register("password")}
+                onChange={() => setActiveInputPassword(true)}
+              />
+
+              {activeInputPassword &&
+                (showPassword ? (
+                  <img
+                    className="eye-icon"
+                    onClick={() => setShowPassword(!showPassword)}
+                    src="./eye.svg"
+                    alt="Hide password"
+                  />
+                ) : (
+                  <img
+                    className="eye-icon"
+                    onClick={() => setShowPassword(!showPassword)}
+                    src="./eye-off.svg"
+                    alt="Show password"
+                  />
+                ))}
+            </div>
+
             {errors.password && (
               <p className="form-errors">{errors.password.message}</p>
             )}
@@ -121,13 +143,17 @@ const SignUP = () => {
               />
             ) : (
               <button
-                className="btn sbumit-btn"
+                className="btn submit-btn"
                 type="submit"
                 disabled={isSubmitting}
               >
                 Register
               </button>
             )}
+
+            <Link to="/login" className="auth-link">
+              <p>Already have an account?</p>
+            </Link>
           </form>
         </div>
       </div>
