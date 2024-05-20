@@ -100,7 +100,7 @@ const SignUP = () => {
             )}
             <div className="psswd-input">
               <input
-                className="input input-password"
+                className="input input-pass"
                 type={showPassword ? "text" : "password"}
                 placeholder="Password"
                 {...register("password")}
@@ -143,7 +143,7 @@ const SignUP = () => {
               />
             ) : (
               <button
-                className="btn submit-btn"
+                className="btn submit-btn "
                 type="submit"
                 disabled={isSubmitting}
               >
