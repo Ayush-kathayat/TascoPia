@@ -53,6 +53,7 @@ const SignUP = () => {
   const {
     register,
     handleSubmit,
+    setError,
     formState: { errors, isSubmitting },
     reset,
   } = useForm({
@@ -60,16 +61,9 @@ const SignUP = () => {
   });
 
   const onSubmit = async (data) => {
-    const success = await registerAPI(data);
+    console.log(data);
 
-    if (!success) {
-      notifyError("Registration Failed");
-      console.log("SOME ERROR OCCURED WHILE REGISTERING ");
-    } else {
-      reset();
-      notifySuccess("Registration Successfull");
-      navigate("/login");
-    }
+    reset();
   };
 
   return (
@@ -84,7 +78,13 @@ const SignUP = () => {
               className="input input-name"
               type="text"
               placeholder="Username"
-              {...register("name")}
+              {...register("name", {
+                required: "Username is required",
+                minLength: {
+                  value: 3,
+                  message: "Name must be at least 3 characters",
+                },
+              })}
             />
             {errors.name && (
               <p className="form-errors">{errors.name.message}</p>
@@ -93,7 +93,13 @@ const SignUP = () => {
               className="input input-email"
               type="email"
               placeholder="Email"
-              {...register("username")}
+              {...register("username", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                  message: "Invalid email address",
+                },
+              })}
             />
             {errors.username && (
               <p className="form-errors">{errors.username.message}</p>
@@ -103,7 +109,13 @@ const SignUP = () => {
                 className="input input-pass"
                 type={showPassword ? "text" : "password"}
                 placeholder="Password"
-                {...register("password")}
+                {...register("password", {
+                  required: "Password is required",
+                  minLength: {
+                    value: 4,
+                    message: "Password must be at least 4 characters",
+                  },
+                })}
                 onChange={() => setActiveInputPassword(true)}
               />
 

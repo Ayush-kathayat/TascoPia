@@ -94,14 +94,19 @@ const Login = () => {
             onSubmit={handleSubmit(onSubmit)}
           >
             {/* Your input fields and submit button */}
-
             <h2 className="form-title">LOGIN</h2>
             <input
               className="input-email"
               type="email"
               id="email"
               placeholder="Email"
-              {...register("username")}
+              {...register("username", {
+                required: "Email is required",
+                pattern: {
+                  value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                  message: "Invalid email address",
+                },
+              })}
             />
             {errors.username && (
               <p className="form-errors">{errors.username.message}</p>
@@ -157,7 +162,6 @@ const Login = () => {
                 Login
               </button>
             )}
-
             <Link to="/signup" className="auth-link">
               <p>Don't have an account?</p>
             </Link>
