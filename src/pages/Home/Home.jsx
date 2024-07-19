@@ -11,11 +11,11 @@ const Home = () => {
   return (
     <>
       <Nav />
-      <Task />
 
       <div className="home-wrapper">
 
-       
+      <Task />
+
        
       </div>
     </>

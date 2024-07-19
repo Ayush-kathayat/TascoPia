@@ -87,7 +87,11 @@ const Task = () => {
     <>
       <div className="body-wrapper">
         <div className="task-list-wrapper" data-aos="fade-right">
-          <h1 className="task-list-title">MY TASKS</h1>
+
+          <div className="task-title-info">
+            <h1 className="task-list-title">MY TASKS</h1>
+          </div>
+
 
           <ul className="task-list" onClick={handleTaskOnClick}>
             {tasks.map((task) => (
@@ -114,8 +118,6 @@ const Task = () => {
             />
           </form>
         </div>
-
-        <Subtask task={latestTask} />
       </div>
     </>
   );
