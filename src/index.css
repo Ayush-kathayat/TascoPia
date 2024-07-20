@@ -166,7 +166,7 @@ a:hover {
 }
 
 /* smooth scroll css */
-
+/* 
 html.lenis {
   height: auto;
 }
@@ -185,7 +185,7 @@ html.lenis {
 
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
-}
+} */
 
 /* ::placeholder { 
   text-indent: 6%;

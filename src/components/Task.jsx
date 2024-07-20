@@ -85,14 +85,12 @@ const Task = () => {
 
   return (
     <>
-      <div className="body-wrapper">
-        <div className="task-list-wrapper" data-aos="fade-right">
+      <div className="task-list-wrapper" data-aos="fade-right">
+        <div className="task-title-info">
+          <h1 className="task-list-title">MY TASKS</h1>
+        </div>
 
-          <div className="task-title-info">
-            <h1 className="task-list-title">MY TASKS</h1>
-          </div>
-
-
+        <div className="task-wrapper-container">
           <ul className="task-list" onClick={handleTaskOnClick}>
             {tasks.map((task) => (
               <li key={task.id} className="task" id={task.id}>
@@ -100,24 +98,24 @@ const Task = () => {
               </li>
             ))}
           </ul>
-
-          <form
-            className="task-input-wrapper"
-            action=""
-            onSubmit={handleSubmitForm}
-          >
-            <button className="task-enter">+</button>
-            <input
-              type="text"
-              id="task-input"
-              spellCheck="false"
-              autoComplete="off"
-              placeholder="ENTER YOUR TASK"
-              onChange={handleOnChange}
-              value={inputTaskData}
-            />
-          </form>
         </div>
+
+        <form
+          className="task-input-wrapper"
+          action=""
+          onSubmit={handleSubmitForm}
+        >
+          <input
+            type="text"
+            id="task-input"
+            spellCheck="false"
+            autoComplete="off"
+            placeholder="ENTER YOUR TASK"
+            onChange={handleOnChange}
+            value={inputTaskData}
+          />
+          <button className="task-enter">+</button>
+        </form>
       </div>
     </>
   );
