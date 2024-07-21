@@ -56,11 +56,7 @@ const Task = () => {
     setInputTaskData("");
   };
 
-  // useEffect(() => {
-  //   for (let index = 0; index < tasks.length; index++) {
-  //     console.log(tasks[index]);
-  //   }
-  // },[tasks]);
+
 
   const handleTaskOnClick = (event) => {
     const task_id = event.target.id;
@@ -85,38 +81,7 @@ const Task = () => {
 
   return (
     <>
-      <div className="task-list-wrapper" data-aos="fade-right">
-        <div className="task-title-info">
-          <h1 className="task-list-title">MY TASKS</h1>
-        </div>
-
-        <div className="task-wrapper-container">
-          <ul className="task-list" onClick={handleTaskOnClick}>
-            {tasks.map((task) => (
-              <li key={task.id} className="task" id={task.id}>
-                {task.name}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <form
-          className="task-input-wrapper"
-          action=""
-          onSubmit={handleSubmitForm}
-        >
-          <input
-            type="text"
-            id="task-input"
-            spellCheck="false"
-            autoComplete="off"
-            placeholder="ENTER YOUR TASK"
-            onChange={handleOnChange}
-            value={inputTaskData}
-          />
-          <button className="task-enter">+</button>
-        </form>
-      </div>
+   
     </>
   );
 };
